@@ -15,8 +15,8 @@ export class EducativeComponentComponent implements OnInit{
   ngOnInit(): void {
     this.set_educative_user_data(this.educative_user_input);
   }
-  ngOnchnages(){
-    alert(`Hey this is teh child component, and you entered :  ${this.educative_user_input}`);
+  alert_the_user(educative_user_input:String){
+    alert(`Hey this is the child component, and you entered :  ${this.educative_user_input}`);
   }
 
   public set_educative_user_data(educative_user_input: String){

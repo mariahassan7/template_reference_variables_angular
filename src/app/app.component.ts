@@ -1,8 +1,5 @@
 import { Component, OnInit, ViewChild, TemplateRef, ViewContainerRef } from '@angular/core';
-import { EducativeComponentComponent } from './educative-component/educative-component.component';
 import { FormBuilder, FormGroup } from '@angular/forms';
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +13,7 @@ export class AppComponent implements OnInit {
   educative_ng_template!: TemplateRef<any>;
 
   constructor(private my_view_reference:ViewContainerRef){
+
   }
   ngOnInit(){
 
