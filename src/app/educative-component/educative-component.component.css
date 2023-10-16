@@ -1,0 +1,14 @@
+.child_container{
+    position:absolute;
+    margin-left:0;
+    width:60%;
+    padding:4%;
+    border: black solid 1px;
+    
+    
+    
+}
+h1{
+    color: rgb(48, 123, 194); 
+    font-size: 20px;
+}

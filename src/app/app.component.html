@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<HTML>
+  <body>
+    <head>
+      <span>{{ title }} </span>
+    </head>
+    <div class="center_content">
+      <img src="./assets/images/educative_logo.png">
+          <p class = "app_main_heading">
+            Welcome to Educative Answers
+          </p>
+          <div style="width:30px; height:30px;"></div>
+          <div class = "app_sub_heading">
+            <form>
+              <input #educative_user_input1 type="text" placeholder="Enter text here..." value="No text entered" >
+              <button (click)="alert_educative_user(educative_user_input1.value)"class="educative_button">
+                Submit
+              </button>
+               <!-- <button (click)="pass_to_child.set_educative_user_data(educative_user_input1.value)" class="educative_button">
+                Submit
+               </button> -->
+            </form>
+            <ng-template #educative_ng_template>
+              <h1 style="text-align:center;">Ngtemplate being rendered using templateRef</h1>
+            </ng-template>
+            <!-- <div *ngTemplateOutlet="educative_ng_template"></div> -->
+            <app-educative-component  #pass_to_child></app-educative-component>
+          </div>
+    </div>
+  </body>
+</HTML>
+<router-outlet></router-outlet>
+
